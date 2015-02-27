@@ -11,3 +11,12 @@ github_username:  dockermeetupsinbordeaux
 
 # Build settings
 markdown: kramdown
+
+# Describe authors information
+authors:
+  tristan:
+    display_name: Tristan Carel
+    gravatar: 0d3d86de4572dff348d3e7610d855dae
+    web:
+    twitter: tristancarel
+    github: tristan0x

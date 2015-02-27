@@ -3,6 +3,7 @@ layout: post
 title: "Docker releases Compose 1.1.0"
 date: 2015-02-27
 categories: docker-compose release
+author: tristan
 ---
 # Docker Compose 1.1.0 is in the air
 
