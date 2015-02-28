@@ -37,21 +37,14 @@ here is how you can use it:
     * creates a file named `/data/bar`
     * is deleted once the container stops
 
-    sudo echo foo |                         \
-    docker run                          \
-    --volumes-from data_container       \
-    -i --rm  busybox                    \
-    tee /data/bar
+    sudo echo foo | docker run --volumes-from data_container -i --rm  busybox tee /data/bar
 
 3. Create a new container that:
     * mounts volume `/data` of *data_container* container
     * reads content of file `/data/bar`
     * is deleted once the container stops
 
-    sudo docker run \
-    --volumes-from data_container \
-    --rm busybox \
-    cat /data/bar
+    sudo docker run --volumes-from data_container --rm busybox cat /data/bar
 
 
 [busybox]: https://registry.hub.docker.com/_/busybox/
