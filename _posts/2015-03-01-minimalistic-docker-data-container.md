@@ -30,22 +30,20 @@ here is how you can use it:
 
 1. Create a data container named *data_container*:
 
-    ```sh
     sudo docker run -v /data --name data_container cogniteev/echo 
-    ```
 
 2. Create a new container that:
     * mounts volume `/data` of *data_container* container
     * creates a file named `/data/bar`
     * is deleted once the container stops
 
-    ```sh
+    {% highlight sh %}
     sudo echo foo |                         \
         docker run                          \
         --volumes-from data_container       \
         -i --rm  busybox                    \
         tee /data/bar
-    ```
+    {% endhighlight %}
 
 3. Create a new container that:
     * mounts volume `/data` of *data_container* container
