@@ -50,9 +50,10 @@ here is how you can use it:
     * reads content of file `/data/bar`
     * is deleted once the container stops
 
-    ```sh
-    sudo docker run --volumes-from data_container --rm busybox cat /data/bar
-    ```
+    sudo docker run \
+    --volumes-from data_container \
+    --rm busybox \
+    cat /data/bar
 
 
 [busybox]: https://registry.hub.docker.com/_/busybox/
