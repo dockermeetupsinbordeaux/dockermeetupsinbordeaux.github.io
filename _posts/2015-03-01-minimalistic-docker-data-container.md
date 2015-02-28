@@ -19,10 +19,7 @@ So I started looking around on Docker Hub for a minimalist Docker image, and I f
 
 So far so good, until I start using it with Docker Compose: I came across a weird issue when Docker Compose starts a container based on this image:
 
-```
-Cannot start container a6da0c7e877b1075696d64802f7e159b7660e5cd395064b891ab5712c74bc266: exec: "/bin/echo": stat /bin/echo: no such file or directory
-<PUT_ERROR_MESSAGE_HERE>
-```
+> Cannot start container a6da0c7e877b1075696d64802f7e159b7660e5cd395064b891ab5712c74bc266: exec: "/bin/echo": stat /bin/echo: no such file or directory
 
 After some digging, I found [docker compose issue #919][compose-919] showing that Docker Compose assumes every container has the `/bin/echo` executable. This is just the tip of the iceberg, there are interested referenced discussions you might want to dig in.
 
