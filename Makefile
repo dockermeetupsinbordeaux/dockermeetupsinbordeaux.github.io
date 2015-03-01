@@ -12,7 +12,7 @@ export DOCKER_COMPOSE_CONFIG
 all: docker-compose.yml
 	$(DOCKER_COMPOSE) up -d
 
-stOp: docker-compose.yml
+stop: docker-compose.yml
 	$(DOCKER_COMPOSE) stop
 
 docker-compose.yml:
