@@ -5,7 +5,6 @@ date: 2015-02-27
 categories: docker-compose release
 author: tristan
 ---
-# Docker Compose 1.1.0 is in the air
 
 [Docker-compose][dc-gh] is a Python tool that allows you to describe your multi-containers application in one single YAML file. Previously known as Fig, Docker compose is now part of the Docker eco-system since acquisition of Orchard Laboratories last summer.
 

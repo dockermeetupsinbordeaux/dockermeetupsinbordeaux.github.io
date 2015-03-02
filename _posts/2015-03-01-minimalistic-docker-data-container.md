@@ -6,6 +6,8 @@ categories: docker-compose data-container
 author: tristan
 ---
 
+Feedback of using data-only data container with Compose.
+
 I used Docker Compose lately to bootstrap our development environment at [Cogniteev][cogniteev] in a blink of an eye.
 
 To collect data and logs written by the different containers that *composes* our application, I setup a data-only container.
