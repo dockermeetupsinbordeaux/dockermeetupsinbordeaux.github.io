@@ -6,7 +6,7 @@ description: >
   through the Docker Meetups in Bordeaux group.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://dockermeetupsinbordeaux.github.io" # the base hostname & protocol for your site
-#twitter_username: jekyllrb
+twitter_username: DockerBordeaux
 github_username:  dockermeetupsinbordeaux
 
 # Build settings
